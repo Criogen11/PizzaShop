@@ -1,15 +1,14 @@
-<% @c.each do |a| %>
+
+<div class="row">
+	<% @c.each do |a| %>
+		<div class="col-md-3">
+			<%= a.name %>
+		</div>
 	
 
+	<% end %>
+</div>	
 
-<div>
-	<div>Название: <%= a.name %></div>
-	<div>Описание:<%= a.description %></div>
-	<div>Цена: <%= a.price %></div>
-	<div>Размер: <%= a.size %> сантиметров</div>
-</div>
-<p></p>
 
-<% end %>
 	
 		

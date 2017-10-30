@@ -19,5 +19,3 @@ get '/about' do
   erb :about  
 end
 
-@c = Product.order (:name)
-p @c
