@@ -1,3 +1,15 @@
-<h2>Приветствуем вас в магазине пиццы!</h2>
+<% @c.each do |a| %>
+	
 
-<button class="btn btn-primary btn-large">Нажми меня!</button>
+
+<div>
+	<div>Название: <%= a.name %></div>
+	<div>Описание:<%= a.description %></div>
+	<div>Цена: <%= a.price %></div>
+	<div>Размер: <%= a.size %> сантиметров</div>
+</div>
+<p></p>
+
+<% end %>
+	
+		
