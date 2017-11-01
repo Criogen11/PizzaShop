@@ -1,14 +1,16 @@
 
 <div class="row">
 	<% @c.each do |a| %>
-		<div class="col-md-4">
+		<div class="col-md-3">
 			<div><%= a.name %></div>
 			<div><%= a.description %></div>
 			<div>Цена: <%= a.price %> руб</div>
 			<div>Размер: <%= a.size %> см.</div>
+			<div>
+		<button class="btn btn-sm btn-success" onclick="add_to_cart(<%= a.id %>)">Заказать</button>
+			</div>	
 		</div>
-	
-
+		
 	<% end %>
 </div>	
 
